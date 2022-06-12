@@ -1,0 +1,9 @@
+body {
+
+    background-image: linear-gradient(95deg, rgb(35, 169, 231), rgb(3, 63, 112));
+    display: flex; 
+    flex-direction: column;
+    row-gap: 8px; 
+   
+
+}    
