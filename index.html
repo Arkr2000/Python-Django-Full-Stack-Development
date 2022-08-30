@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>HTML Form</title>
+        <link rel="stylesheet" href="style.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <script>
+        function submit()
+        {
+            alert('Form submitted successfully');
+        }
+
+        
+    </script>
+
+    <script>
+        function spansubmit()
+        {
+            document.getElementById("searchButton").innerHTML='Form submitted successfully';
+        }
+        document.getElementById("searchButton").onclick = spansubmit() 
+    </script>
+
+    <style>
+        
+
+        input[type='checkbox'] {
+      position: relative;
+      cursor: pointer;
+      margin: 20px;
+ }
+ input[type='checkbox']:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      background-color: inherit;
+      outline: 1px rgba(255, 255, 255, 0.2) solid;
+      transform: translate(-50%, -50%);
+ }
+ input[type='checkbox']:checked:before {     
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      background-color: inherit;
+      outline: 1px rgba(255, 255, 255, 0.2) solid;
+      transform: translate(-50%, -50%);
+      box-shadow: 0px 0px 4px 1px #fff;
+ }
+ input[type='checkbox']:checked:after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 10px;
+      border: solid;
+      border-width: 0 2px 2px 0;
+      border-color: inherit;
+      position: absolute;
+      color:green;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+ }
+    </style>
+    <body>
+        <h6>HTML Form</h6>
+        <br>
+        <label for="name">Name</label>
+        <input type="text" class="txtarea" name="name" required>
+        <br><br>
+
+        <label for="address">Address</label>
+        <br>
+        <textarea rows="8" cols="30" style="background-color:green ; border:1px dashed ; color:yellow" required></textarea>
+        <br><br>
+        <label for="skillsets">Skillsets</label>
+        <br><br>
+
+        <input type="checkbox"  name="sset">MS Technologies
+        <br>
+        <input type="checkbox" name="sset">Database Technologies
+        <br>
+        <input type="checkbox"  name="sset">Java Technologies
+        <br>
+        <input type="checkbox"  name="sset">ASP.NET Technologies
+        <br>
+        <input type="checkbox"  name="sset">React Technologies
+        <br>
+
+
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" name="gender">
+        <label for="GENDER">Male</label>
+        
+        <br>
+        <input type="radio" name="gender">
+        <label for="GENDER">Female</label>
+        <br>
+
+        <input type="submit" name="submit" onclick="submit()" value="Submit">
+        <span id="searchButton" class="search icon-small open-btn" onclick="spansubmit()">
+        </span>
+    </body>
+</html>
