@@ -37,7 +37,7 @@
       height: 20px;
       top: 50%;
       left: 50%;
-      background-color: inherit;
+      background-color: rgb(147, 150, 0);
       outline: 1px rgba(255, 255, 255, 0.2) solid;
       transform: translate(-50%, -50%);
  }
@@ -63,7 +63,7 @@
       border-width: 0 2px 2px 0;
       border-color: inherit;
       position: absolute;
-      color:green;
+      color:rgb(207, 181, 93);
       top: 35%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
@@ -78,20 +78,20 @@
 
         <label for="address">Address</label>
         <br>
-        <textarea rows="8" cols="30" style="background-color:green ; border:1px dashed ; color:yellow" required></textarea>
+        <textarea rows="8" cols="30" style="background-color:rgb(92, 214, 235) ; border:1px dashed ; color:rgb(8, 8, 0)" required></textarea>
         <br><br>
         <label for="skillsets">Skillsets</label>
         <br><br>
 
-        <input type="checkbox"  name="sset">MS Technologies
+        <input type="checkbox"  name="sset"> Django
         <br>
-        <input type="checkbox" name="sset">Database Technologies
+        <input type="checkbox" name="sset">HTML
         <br>
-        <input type="checkbox"  name="sset">Java Technologies
+        <input type="checkbox"  name="sset">Java 
         <br>
-        <input type="checkbox"  name="sset">ASP.NET Technologies
+        <input type="checkbox"  name="sset">CSS
         <br>
-        <input type="checkbox"  name="sset">React Technologies
+        <input type="checkbox"  name="sset">Angular
         <br>
 
 
@@ -99,10 +99,12 @@
         <br>
         <input type="radio" name="gender">
         <label for="GENDER">Male</label>
-        
         <br>
         <input type="radio" name="gender">
         <label for="GENDER">Female</label>
+        <br>
+        <input type="radio" name="gender">
+        <label for="GENDER">Prefer not to say</label>
         <br>
 
         <input type="submit" name="submit" onclick="submit()" value="Submit">
